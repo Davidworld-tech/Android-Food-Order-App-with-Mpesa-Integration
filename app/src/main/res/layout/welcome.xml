@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".WelcomeScreen"
+    android:background="@drawable/welcome_background"
+android:id="@+id/intro_layout">
+
+<androidx.viewpager.widget.ViewPager
+    android:id="@+id/slideviewPager"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/slider"/>
+
+
+<Button
+    android:id="@+id/btnGetStarted"
+    android:textSize="20sp"
+    android:layout_width="200dp"
+    android:transitionName="loginTransition"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    android:layout_below="@id/indicator"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/btn_gradient_style"
+    android:textColor="@color/gradient_start_color"
+    android:text="@string/login" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/slideviewPager"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        app:tabBackground="@drawable/indicator_selector"
+         app:tabIndicatorHeight="0dp"
+        android:layout_marginBottom="10dp"
+
+        >
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line1"
+        android:layout_above="@+id/bottom"
+        android:background="@color/intro_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/bottom"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/doNot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:text="@string/SignUp"
+            android:layout_marginEnd="5dp"
+            android:transitionName="doTransition"
+            />
+        <TextView
+            android:id="@+id/signUp"
+            android:background="@color/Transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:transitionName="signUpTransition"
+            android:text="@string/sign_up"/>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

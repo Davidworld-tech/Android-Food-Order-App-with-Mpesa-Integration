@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/upper"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-60dp"
+        android:id="@+id/header"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:textSize="18sp"
+        android:id="@+id/nice"
+        android:text="@string/nice_to_see_you_again"/>
+    <TextView
+        android:layout_below="@id/nice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/back"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/intro_background"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/cv">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/l_phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Enter Phone number"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+                <EditText
+                    android:id="@+id/l_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Enter Password"
+                    />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cv"
+            android:layout_alignStart="@+id/cv"
+            android:layout_alignEnd="@+id/cv"
+            android:textAllCaps="false"
+            android:transitionName="loginTransition"
+            android:id="@+id/btnLogin"
+            android:text="LOGIN"
+            android:background="@drawable/btn_login_gradient"
+            android:textColor="@color/intro_background"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="-20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/cv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:layout_marginEnd="100dp"
+                android:id="@+id/remember_me_check"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Forgot Your Password?"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_above="@id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adminLoginPanel"
+        android:text="I am admin?"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_above="@id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notAdmin"
+        android:text="Not admin?"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:background="@drawable/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/bottom"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SignUp"
+            android:layout_marginBottom="-40dp"
+            android:layout_marginEnd="5dp"
+            android:transitionName="doTransition"
+            />
+        <TextView
+            android:id="@+id/redirect_signUp"
+            android:background="@color/Transparent"
+            android:layout_marginBottom="-40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:transitionName="signUpTransition"
+            android:text="@string/sign_up"/>
+    </LinearLayout>
+
+</RelativeLayout>

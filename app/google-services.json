@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "764729120730",
+    "firebase_url": "https://foodz-e1b12.firebaseio.com",
+    "project_id": "foodz-e1b12",
+    "storage_bucket": "foodz-e1b12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764729120730:android:62714d4e87c7ee924bd2e3",
+        "android_client_info": {
+          "package_name": "com.example.foodz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764729120730-rr3sb07pgolunhf66lhmn156dpmu03rt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodz",
+            "certificate_hash": "d47c8ed79a9e1f7b8998101d142e67d846f551b6"
+          }
+        },
+        {
+          "client_id": "764729120730-m555ld3r58hm45f118m7bfed2so44it2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW76REO2ytW9FV9sUvTSfe-rDMTgemOmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764729120730-m555ld3r58hm45f118m7bfed2so44it2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

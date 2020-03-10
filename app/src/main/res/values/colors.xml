@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F7931E</color>
+    <color name="colorPrimaryDark">#F48508</color>
+    <color name="colorAccent">#304FFE</color>
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+    <color name="intro_background">#ffffff</color>
+    <color name="logo_color">#F7931E</color>
+    <color name="Transparent">#00000000</color>
+    <color name="gradient_start_color">#F79314</color>
+    <color name="gradient_end_color">#D50000</color>
+
+    <color name="items">#FFD600</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+</resources>

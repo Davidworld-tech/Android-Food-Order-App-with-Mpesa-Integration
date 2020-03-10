@@ -1,0 +1,107 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp">
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:id="@+id/product_image_maintain"/>
+
+        <EditText
+            android:layout_below="@+id/product_image_maintain"
+            android:background="@drawable/adminedittext"
+            android:id="@+id/product_name_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:hint="Product Name"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <EditText
+            android:id="@+id/product_price_maintain"
+            android:layout_below="@+id/product_name_maintain"
+            android:background="@drawable/adminedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:hint="Product Price"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:layout_below="@+id/product_price_maintain"
+            android:background="@drawable/adminedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:hint="Item Quantity left"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/available_display_maintain"
+            />
+
+        <EditText
+            android:id="@+id/product_description_maintain"
+            android:layout_below="@+id/available_display_maintain"
+            android:background="@drawable/adminedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:hint="Product Description"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:text="apply changes"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_login_gradient"
+            android:layout_below="@id/product_description_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_maintain_btn" />
+
+        <Button
+           android:layout_below="@id/product_maintain_btn"
+            android:text="DELETE PRODUCT"
+            android:id="@+id/Delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_login_gradient"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
